@@ -1,0 +1,41 @@
+name: marmaray_iade
+description: Marmaray akıllı iade prototipi — konum bazlı otomatik ücret iadesi.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Konum
+  geolocator: ^13.0.1
+  permission_handler: ^11.3.1
+
+  # Harita (ücretsiz, API anahtarsız)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Bildirim
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+  # Saklama
+  shared_preferences: ^2.3.2
+
+  # QR
+  qr_flutter: ^4.1.0
+
+  # Format
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
